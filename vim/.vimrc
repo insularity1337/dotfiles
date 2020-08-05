@@ -1,25 +1,33 @@
-" Disable vi compatibility
-set nocompatible
-
-" Enable syntax highlighting
+"" Basics
 syntax on
 
-" Show line numbers
-set number
+set nocompatible      " Disable vi compatibility
+set number            " Show line numbers
+set encoding=utf-8    " UTF encoding
+set showcmd           " Show command
+set relativenumber    " Relative string numbers
+set cursorline        " Highlight selected line
+set nowrap            " Stop line breaking
+set visualbell        " Disable beeper
 
-" Disable beeper
-set visualbell
 
-" Encoding
-set encoding=utf-8
 
-" tabs -> 2 spaces
-set tabstop=2
-set shiftwidth=2
-set expandtab
+"" Tab settings
+set tabstop=2         " TAB width
+set shiftwidth=2      " Number of spaces for autoindent
+set softtabstop=2     " Number of spaces to remove
+set smarttab          " Even smarter TABs
+set expandtab         " TABs as spaces
+set autoindent        " Copy indent when starting a new line
+set smartindent       " Indent after '{'
 
-" Show trail spaces
-set listchars=trail:~
+set listchars=trail:~ " Show trail spaces
 set list
 
-set showcmd
+
+
+"" Search settings
+set ignorecase        " Ignore lettercase
+set smartcase         " Case sensitive search when got uppercase
+set hlsearch          " Highlight all hits
+set incsearch         " Enable incremental search
